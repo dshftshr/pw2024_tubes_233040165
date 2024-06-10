@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url();
+    background-color: rgba(14, 15, 36, 0.9);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -12,18 +12,19 @@ body {
 .input {
     position: fixed;
     top: 50%;
-    left: 610px;
+    left: 700px;
     transform: translate(-30%, -50%);
-    background: rgba(21, 26, 24,0.9);
+    background: rgba(193, 194, 233, 0.9);
     padding: 50px;
     width: 270px;
-    box-shadow: 0px 0px 25px 10px black;
+    align-items: center;
     border-radius: 15px;
+    
 }
 
 .input h1 {
     text-align: center;
-    color: white;
+    color: black;
     font-size: 30px;
     font-family: sans-serif;
     letter-spacing: 3px;
@@ -35,13 +36,13 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 10px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
     padding: 8px 0;
 }
 
 .box-input i {
     font-size: 23px;
-    color: white;
+    color: black;
     padding: 5px 0;
 }
 
@@ -51,12 +52,12 @@ body {
     background: none;
     border: none;
     outline: none;
-    color: white;
+    color: black;
     font-size: 18px;
 }
 
 .box-input input::placeholder {
-    color: white;
+    color: black;
 }
 
 .btn-input .box-input input:hover {
@@ -67,19 +68,14 @@ body {
     margin-left: 10px;
     margin-bottom: 20px;
     background: none;
-    border: 1px solid white;
     width: 92.5%;
     padding: 10px;
-    color: white;
+    color: black;
     font-size: 18px;
     letter-spacing: 3px;
     cursor: pointer;
     transition: all .2s;
     border-radius: 10px;
-}
-
-.box-input:hover {
-    background: black;
 }
 
 .bottom {
@@ -89,13 +85,13 @@ body {
 }
 
 .bottom p {
-    color: white;
+    color: black;
     font-size: 15px;
     text-decoration: none;
 }
 
 .bottom a {
-    color: lightgreen;
+    color: rgba(85, 17, 17, 0.9);
     font-size: 15px;
     text-decoration: none;
 }

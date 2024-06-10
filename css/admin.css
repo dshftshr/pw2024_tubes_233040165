@@ -16,30 +16,33 @@ body {
 }
 
 header {
-  width: 85%;
+  width: 94%;
   height: 95%;
   /* border: 1px solid white; */
   display: flex;
   background-color: #D1D8C5;
+  /* margin-bottom: 250px; */
 }
 
 header .kiri{
-  width: 230px  ;
+  width: 300px;
   height: 95vh;
   /* background-color: #1E1E1E; */
   /* border: 1px solid rgb(147, 22, 22); */
 }
 
-header .kiri .kiri_menu img {
-  width: 28px;
-  height: 28px; 
+header .kiri .tema {
+  font-weight: 700;
+  font-size: 28px;
+  color: rgb(60, 74, 82);
+  line-height: 42px;
 }
 
-header .sidebar .sidebar_menu .mn p {
+header .kiri .kiri_menu .mn p {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-
+   color: rgb(39, 136, 192);
 }
 
 header .tengah {
@@ -73,9 +76,12 @@ header .tengah .cari .icon i {
   justify-content: center;
   align-items: center;
   color: #626262;
+  margin-top: -11px;
   /* font-size: 1.6em; */
 
+
 }
+
 
 header .hal_utama .cari .form-control:hover {
   /* color: white; */
@@ -83,4 +89,11 @@ header .hal_utama .cari .form-control:hover {
   border: 2px solid white;
   
 }
+
+/* header .data table tr .desc{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+} */
+
 
