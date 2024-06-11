@@ -36,7 +36,7 @@ if (isset($_POST['cari'])) {
 </head>
 
 <body>
-  <header class="" style="margin-bottom: 365px;">
+  <header class="" style="margin-bottom: auto">
     <div class="kiri border-end border-4">
       <div class="tema mt-2">
         <h4 class="">Selamat Datang<br>Admin!</h4>
@@ -78,7 +78,7 @@ if (isset($_POST['cari'])) {
         <form class="" action="" method="POST">
           <input class="keyword form-control me-2 rounded-pill text-light bg-secondary" type="text" name="keyword" placeholder="Search" aria-label="Search" autocomplete="off" class="keyword" autofocus class="keyword" />
           <div class="icon">
-            <button class="btn btn-link" type="submit" name="cari">
+            <button class="btn btn-link" type="submit" name="cari" class="tombol-cari">
               <i class="bi bi-search"></i>
             </button>
           </div>

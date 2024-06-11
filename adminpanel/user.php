@@ -76,7 +76,7 @@ if (isset($_POST['cari'])) {
     <div class="tengah mx-auto">
       <div class="cari py-3 text-light">
         <form class="" action="" method="POST">
-          <input class="form-control me-2 rounded-pill text-light bg-secondary" type="text" name="keyword" placeholder="Search" aria-label="Search" autocomplete="off" autofocus />
+          <input class="keyword form-control me-2 rounded-pill text-light bg-secondary" type="text" name="keyword" placeholder="Search" aria-label="Search" autocomplete="off" autofocus />
           <div class="icon">
             <button class="btn btn-link" type="submit" name="cari">
               <i class="bi bi-search"></i>
@@ -133,6 +133,7 @@ if (isset($_POST['cari'])) {
   </header>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="../js/user.js"></script>
 </body>
 
 </html>

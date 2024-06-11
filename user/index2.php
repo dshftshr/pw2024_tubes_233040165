@@ -6,8 +6,9 @@ require '../fungsi/function.php';
 
 $movie = query("SELECT * FROM movie");
 
+// ketika tombol cari diklik
 if (isset($_POST['cari'])) {
-  $movie = cari($_POST['keyword']);
+  $movie = cariindex($_POST['keyword']);
 }
 
 ?>
@@ -60,13 +61,15 @@ if (isset($_POST['cari'])) {
             </nav>
             <span class="fa fa-bars" onclick="menutoggle()"></span>
 
-            <div class="subscribe flex">
-              <div class="search-box">
-                <input type="search" name="" id="search-input" placeholder="Search movie">
-                <i class='bx bx-search'></i>
+            <form class="" action="" method="POST">
+              <div class="subscribe flex">
+                <div class="search-box">
+                  <input class="keyword" type="text" name="keyword" id="search-input" placeholder="Search movie" aria-label="Search" autocomplete="off" autofocus>
+                  <button type="submit" name="cari" style="width: 10px; margin-bottom: 10px; background: transparent;"><i class='bx bx-search'></i></button>
+                </div>
+                <a href="../halaman_login/login.php"><i id="palybtn" class="fas fa-user" style="text-align: center"></i></a>
               </div>
-              <a href="../halaman_login/login.php"><i id="palybtn" class="fas fa-user" style="text-align: center"></i></a>
-            </div>
+            </form>
           </div>
         </div>
       </header>
@@ -78,7 +81,6 @@ if (isset($_POST['cari'])) {
       <h1 class="section-title-01">Marvel</h1>
       <h2 class="section-title-02">Marvel</h2>
       <div class="content">
-
         <div class="portofolio-list">
           <?php foreach ($movie as $m) : ?>
             <div class="img-card-container">
@@ -98,10 +100,9 @@ if (isset($_POST['cari'])) {
           <?php endforeach; ?>
         </div>
       </div>
-
-
-
   </section>
+
+
   <!-- footer -->
   <footer>
     <div class="container mtop">

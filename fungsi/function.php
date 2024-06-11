@@ -188,6 +188,25 @@ function cariuser($keyword)
     return $rows;
 }
 
+function cariindex($keyword)
+{
+    $conn = koneksi();
+
+    $query = "SELECT * FROM movie 
+    WHERE 
+    judul_movie LIKE '%$keyword%' OR
+    tayang LIKE '%$keyword%'
+
+    ";
+    $result = mysqli_query($conn, $query);
+
+    $rows = [];
+    while ($row = mysqli_fetch_assoc($result)) {
+        $rows[] = $row;
+    }
+    return $rows;
+}
+
 
 function login($log)
 {
